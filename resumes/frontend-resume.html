@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muis Resume</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Arial:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
     <style>
       body {
-        font-family: "Inter", sans-serif;
+        font-family: "Arial", sans-serif;
         background: #fff;
         color: #000;
         margin: 0 auto;
         padding: 4px 15px;
         max-width: 800px;
         font-size: 12px;
-        line-height: 1.6;
+        line-height: 1.5;
       }
 
       a {
         color: #2e75b6;
+        font-weight: 400;
         text-decoration: none;
       }
 
@@ -30,7 +31,7 @@
       }
 
       h1 {
-        font-size: 19px;
+        font-size: 20px;
         font-weight: 700;
         text-align: center;
         color: #000;
@@ -39,19 +40,25 @@
 
       h1 span {
         display: block;
-        color: #ccc;
+        color: #222;
         font-size: 12px;
-        font-weight: 100;
+        font-weight: 600;
       }
 
       h2 {
         font-size: 13px;
         font-weight: 600;
-        margin: 20px 0 0 0;
+        margin: 16px 0 0 0;
         text-transform: uppercase;
-        border-bottom: 1px dashed #000;
+        border-bottom: 1px solid #000;
         padding-bottom: 0px;
         color: #000;
+      }
+
+      .location {
+        width: 100%;
+        text-align: center;
+        margin-top: -13px;
       }
 
       .contact {
@@ -60,9 +67,9 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 5px;
-        color: #555;
+        gap: 0px 4px;
         font-size: 10px;
+        margin-top: -9px;
         margin-bottom: 25px;
       }
 
@@ -70,11 +77,6 @@
         display: flex;
         align-items: center;
         gap: 2px;
-      }
-
-      .contact > div img {
-        width: 11px;
-        height: 11px;
       }
 
       .section {
@@ -87,9 +89,9 @@
         font-size: 14px;
       }
 
-      .section h3 span {
-        color: #555;
+      .section h3 a {
         font-size: 11px;
+        text-decoration: underline;
       }
 
       .section .meta {
@@ -106,7 +108,7 @@
 
       ul li {
         color: #333;
-        margin-bottom: 6px;
+        margin-bottom: 4px;
       }
 
       .project-title {
@@ -123,39 +125,31 @@
       ADEBAYO MUIS
       <span> FRONTEND DEVELOPER </span>
     </h1>
+    <p class="location">
+      <strong> Location:</strong> Ore, Ondo State, Nigeria.
+    </p>
     <div class="contact">
       <div>
         <a href="https://linkedin.com/in/adebayo-muis" target="_blank">
-          <img
-            src="../icons/linkedin.png"
-            alt="Adebayo Muis LinkedIn"
-            style="margin-bottom: -0.1rem"
-          />
-          LinkedIn
+          linkedin.com/in/adebayo-muis
         </a>
       </div>
       |
       <div>
-        <img src="../icons/phone.png" alt="Adebayo Muis phone number" />
-        <a href="tel:+2347079983007"> Phone Number </a>
+        <a href="tel:+2347079983007"> +234 7079983007 </a>
       </div>
       |
       <div>
-        <img
-          src="../icons/email.png"
-          alt="Adebayo Muis Email Address"
-          style="margin-right: 0.2rem"
-        />
-        <a href="mailto:adebayomuis32@gmail.com"> Email Address </a>
+        <a href="mailto:adebayomuis32@gmail.com"> adebayomuis32@gmail.com </a>
       </div>
       |
       <div>
-        <img src="../icons/github.png" alt="Adebayo Muis Github Account" />
-        <a href="https://github.com/Charmingdc" target="_blank"> GitHub </a>
+        <a href="https://github.com/Charmingdc" target="_blank">
+          github.com/Charmingdc
+        </a>
       </div>
       |
       <div>
-        <img src="../icons/link.png" alt="Adebayo Muis Portfolio" />
         <a href="https://muis-dev.vercel.app" target="_blank"> Portfolio </a>
       </div>
     </div>
@@ -172,24 +166,18 @@
     <h2>Skills</h2>
     <p>
       <strong>Frontend:</strong> HTML5, CSS3, TailwindCss, JavaScript,
-      TypeScript, React.js | Next.js<br />
-      <strong>Backend:</strong> Basic Node.js | Firebase | Supabase<br />
-      <strong>Tools:</strong> Git | Github | Vercel | Netlify
-    </p>
-
-    <h2>Education</h2>
-    <p>
-      <strong>Federal University of Technology, Akure.</strong><br />
-      BSc Computer Science (Expected Graduation - [2028])<br />
-      • Relevant modules: Software Engineering, Web and Internet Technology,
-      Algorithms and Data Structures and Systems Design.
+      TypeScript, React.js, Next.js, Framer Motion <br />
+      <strong>Backend:</strong> Basic Node.js, Firebase, Supabase<br />
+      <strong>Tools:</strong> Git, Github, Vercel, Netlify
     </p>
 
     <h2>Projects Experience</h2>
     <div class="section">
       <h3>
-        <a href="https://scrolljs.vercel.app" target="_blank"> ScrollJs </a>
-        <span>| JavaScript</span>
+        ScrollJs |
+        <a href="https://github.com/Charmingdc/ScrollJs" target="_blank">
+          Github Link
+        </a>
       </h3>
       <div class="meta">
         Sole Developer & Open Source Maintainer | 02/2025 – Present
@@ -207,8 +195,10 @@
       </ul>
 
       <h3>
-        <a href="https://mindecho-six.vercel.app" target="_blank"> MindEcho </a>
-        <span>| HTML5, CSS3, JavaScript, Firebase </span>
+        MindEcho |
+        <a href="https://github.com/Charmingdc/MindEcho" target="_blank">
+          Github Link
+        </a>
       </h3>
       <div class="meta">Sole Developer | 11/2024 – 12/2024</div>
       <ul>
@@ -223,8 +213,10 @@
       </ul>
 
       <h3>
-        <a href="https://postmorph.xyz" target="_blank"> Postmorph </a>
-        <span>| NextJs, TailwindCss, Typescript, Supabase </span>
+        Postmorph |
+        <a href="https://github.com/Charmingdc/postmorph" target="_blank">
+          Github Link
+        </a>
       </h3>
       <div class="meta">Founder & Developer | 06/2025 – Present</div>
       <ul>
